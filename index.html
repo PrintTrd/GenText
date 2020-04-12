@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GenText</title>
+    <link href='https://fonts.googleapis.com/css?family=Allura' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Amatic SC' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Barrio' rel='stylesheet'>
+    <link rel="stylesheet" href="gentext.css">
+  </head>
+  <body>
+    <mobile>
+      <div class="mobile-status-bar">
+        <img src="https://i.imgur.com/XSqz2K4.png" alt="">
+      </div>
+      <div class='mobile-container'>
+        <nav>GenText</nav>
+
+        <div id="page-setting" class="page">
+          <div class="funcBtn">
+            <button onclick="copyText()" data-clipboard-target="myInput">Copy text</button>
+            <button onclick="document.getElementById('myInput').value = '', document.getElementById('myInput').style.fontWeight = 'normal', document.getElementById('myInput').style.fontFamily = 'monospace', document.getElementById('myInput').style.letterSpacing = 'normal', document.getElementById('myInput').style.textTransform = 'none' ">Clear</button>
+          </div>
+          <textarea placeholder="Type or paste your content here" rows="10" text.style.fontWeight = '100' id="myInput"></textarea>
+
+          <div class="option">
+            <button onclick="spacing()" id="spacing">Space</button>        
+            <button onclick="lowercase()">lowercase</button>
+            <button onclick="uppercase()">UPPERCASE</button>
+            <button onclick="bold()" id="bold">Bold</button>
+            <button onclick="impact()" id="impact">Font</button>
+            <button onclick="courier()" id="courier">Font</button>
+            
+            <button onclick="allura()" id="allura">Font</button>
+            <button onclick="amatic()" id="amatic">Font</button>
+            <button onclick="barrio()" id="barrio">Font</button>
+          </div>
+
+        </div>
+      </div>
+
+      <script src="gentext.js"></script>
+
+    </mobile>
+  </body>
+</html>
+

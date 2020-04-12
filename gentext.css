@@ -1,0 +1,86 @@
+body{
+  padding:1em;
+  background:#ECEFF1;
+  font-family:sans-serif;
+}
+mobile{
+  display:flex;
+  flex-flow:column nowrap;
+  background:white;
+  margin:auto;
+  width:414px;
+  height:736px;
+  box-shadow:0px 12px 24px #0004;
+}
+.mobile-status-bar img{
+  width:100%;
+}
+.mobile-container{
+  height:100%;
+  overflow:auto;
+  background: #EDE7F6;
+}
+
+nav{
+  background: linear-gradient(120deg, rgba(131,58,180,1) 5%, rgba(253,29,29,1) 76%, rgba(252,176,69,1) 100%);
+  color:white;
+  text-align:center;
+  padding:.5em;
+}
+.page{
+  padding:1em;
+}
+
+textarea{
+  width:100%;
+  border-radius:.3em;
+  font-size:1rem;
+  padding:1em;
+  box-sizing:border-box;
+}
+
+button{
+  background:#AB47BC;
+  border-radius:.3em;
+  font-size:0.85rem;
+  color:white;
+  width:25%;
+  padding:.5em;
+  box-sizing:border-box;
+  border:none;
+}
+.funcBtn {
+  margin-bottom: .3em;
+}
+.option {
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.option > button {
+  background: #AD1457;
+  flex-basis: 22%;
+  margin: .3em;
+}
+#bold {
+  font-weight: bold;
+}
+#impact {
+  font-family:"Impact",Charcoal,sans-serif;
+}
+#courier {
+  font-family:"Courier New", Courier, monospace;
+}
+#allura {
+  font-family:"Allura";
+}
+#amatic {
+  font-family:"Amatic SC";
+}
+#barrio {
+  font-family:"Barrio";
+}
+#spacing {
+  letter-spacing: .3em;
+}
