@@ -1,6 +1,11 @@
 body{
   /* padding:1em;
   background:#ECEFF1; */
+  width: 100vw;
+  height: 100vh;
+  display:flex;
+  flex-flow:column wrap;
+  margin:auto;
   font-family:sans-serif;
 }
 /* mobile{
@@ -22,10 +27,11 @@ body{
 }
 
 nav{
-  background: linear-gradient(120deg, rgba(131,58,180,1) 5%, rgba(253,29,29,1) 76%, rgba(252,176,69,1) 100%);
+  background: linear-gradient(120deg, rgba(131,58,180,0.65) 5%, rgba(253,29,29,0.65) 76%, rgba(252,176,69,0.65) 100%);
   color:white;
   text-align:center;
   padding:.5em;
+  height: 5.5em;
 }
 .page{
   padding:1em;
@@ -42,7 +48,7 @@ textarea{
 button{
   background:#AB47BC;
   border-radius:.3em;
-  font-size:0.85rem;
+  font-size:1em;
   color:white;
   width:25%;
   padding:.5em;
