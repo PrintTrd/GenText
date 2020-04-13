@@ -8,19 +8,16 @@
     <link rel="stylesheet" href="gentext.css">
   </head>
   <body>
-    <mobile>
-      <div class="mobile-status-bar">
-        <img src="https://i.imgur.com/XSqz2K4.png" alt="">
       </div>
       <div class='mobile-container'>
         <nav>GenText</nav>
-
         <div id="page-setting" class="page">
           <div class="funcBtn">
             <button onclick="copyText()" data-clipboard-target="myInput">Copy text</button>
-            <button onclick="document.getElementById('myInput').value = '', document.getElementById('myInput').style.fontWeight = 'normal', document.getElementById('myInput').style.fontFamily = 'monospace', document.getElementById('myInput').style.letterSpacing = 'normal', document.getElementById('myInput').style.textTransform = 'none' ">Clear</button>
+            <button onclick="document.getElementById('myInput').value = '', document.getElementById('myOutput').value = '', document.getElementById('myInput').style.fontWeight = 'normal', document.getElementById('myInput').style.fontFamily = 'monospace', document.getElementById('myInput').style.letterSpacing = 'normal', document.getElementById('myInput').style.textTransform = 'none' ">Clear</button>
           </div>
           <textarea placeholder="Type or paste your content here" rows="10" text.style.fontWeight = '100' id="myInput"></textarea>
+          <textarea placeholder="Output" rows="10" text.style.fontWeight = '100' id="myOutput" readonly></textarea>
 
           <div class="option">
             <button onclick="spacing()" id="spacing">Space</button>        
@@ -39,8 +36,6 @@
       </div>
 
       <script src="gentext.js"></script>
-
-    </mobile>
   </body>
 </html>
 
