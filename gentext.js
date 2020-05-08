@@ -1,8 +1,8 @@
 /* Get the text field */
 var text = document.getElementById("myInput");
-var string = text.value;
+// var string = text.value;
 var newtext = document.getElementById("myOutput");
-const arr = string.split("");
+var arr = newtext.value.split("");
 
 function copyText() {
   /* Select the text field */
@@ -23,17 +23,18 @@ function outFunc() {
     tooltip.innerHTML = "Copy to clipboard";
 }
 
-function spacing(unicodearray) {
+function spacing() {
+    let t_space = text.value;
+    t_space = t_space.split('').join(' ');
+    newtext.value = t_space;
     //var i=0; i<text.length; i++
-    for (var i in unicodearray){
-        //newtext.value.charAt(i) = text.value.charAt(i)+" ";
-        arr[i] = text.charCodeAt(i);
-        console.log(arr[i]);
-        console.log(text.charCodeAt(i));
-        //document.write(text.charCodeAt(i)+"\u00a0");
-        newtext.value += text.fromCharCode(unicodearray[i]);//+"\u00a0"; //&nbsp;
-        arr.push(newtext);
-    }
+    // for (var i in unicodearray){        //newtext.value.charAt(i) = text.value.charAt(i)+" ";
+    //     arr[i] = newtext.value.charCodeAt(i);
+    //     console.log(arr[i]);
+    //     console.log(newtext.value.charCodeAt(i));       //document.write(text.charCodeAt(i)+"\u00a0");
+    //     newtext.value += newtext.value.fromCharCode(unicodearray[i]);//+"\u00a0"; //&nbsp;
+    //     arr.push(newtext);
+    // }
     // newtext.value = text.value;
     // newtext.style.letterSpacing = ".5em";
 
@@ -59,6 +60,7 @@ function lowercase() {
 function uppercase() {
     newtext.value = text.value;
     newtext.style.textTransform = "uppercase";
+    console.log(arr[0]);
 }
 function bold() {
     newtext.value = text.value;
