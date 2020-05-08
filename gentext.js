@@ -13,9 +13,15 @@ function copyText() {
   document.execCommand("copy");
 
   /* Alert the copied text */
-  alert("Copied the text: " + newtext.value);
+  var tooltip = document.getElementById("myTooltip");
+  tooltip.innerHTML = "Copied: " + newtext.value;
+//   alert("Copied the text: " + newtext.value);
 }
 
+function outFunc() {
+    var tooltip = document.getElementById("myTooltip");
+    tooltip.innerHTML = "Copy to clipboard";
+}
 
 function spacing(unicodearray) {
     //var i=0; i<text.length; i++

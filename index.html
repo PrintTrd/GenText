@@ -18,7 +18,12 @@
         <nav><img src="img/icons8-text-64.png"><br><b>GenText</b></nav>
         <div id="page-setting" class="page">
           <div class="funcBtn">
-            <button onclick="copyText()" data-clipboard-target="myInput">Copy text</button>
+            <div class="tooltip">
+              <button onclick="copyText()" onmouseout="outFunc()" data-clipboard-target="myInput">
+                <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+                Copy text
+              </button>
+            </div>
             <button onclick="document.getElementById('myInput').value = '', document.getElementById('myOutput').value = '', document.getElementById('myInput').style.fontWeight = 'normal', document.getElementById('myInput').style.fontFamily = 'monospace', document.getElementById('myInput').style.letterSpacing = 'normal', document.getElementById('myInput').style.textTransform = 'none' ">Clear</button>
           </div>
           <textarea placeholder="Type or paste your content here" rows="10" text.style.fontWeight = '100' id="myInput"></textarea>
