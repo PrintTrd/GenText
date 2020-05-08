@@ -60,7 +60,6 @@ function lowercase() {
 function uppercase() {
     newtext.value = text.value;
     newtext.style.textTransform = "uppercase";
-    console.log(arr[0]);
 }
 function bold() {
     newtext.value = text.value;
