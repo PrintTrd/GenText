@@ -76,10 +76,8 @@ function bold() {
         }
         return String.fromCodePoint (char.codePointAt (0) + diff);
     }    
-    // newtext.value = text.value;
-    //Change the font weight style to 700
-    // newtext.style.fontWeight = 'bold';
     newtext.value = text.value.replace (/[A-Za-z]/g, translate);
+    //Change the font weight style to 700    
 }
 
 function impact() {
