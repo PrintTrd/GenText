@@ -5,17 +5,17 @@ var newtext = document.getElementById("myOutput");
 var arr = newtext.value.split("");
 
 function copyText() {
-  /* Select the text field */
-  newtext.select();
-  newtext.setSelectionRange(0, 99999); /*For mobile devices*/
+    /* Select the text field */
+    newtext.select();
+    newtext.setSelectionRange(0, 99999); /*For mobile devices*/
 
-  /* Copy the text inside the text field */
-  document.execCommand("copy");
+    /* Copy the text inside the text field */
+    document.execCommand("copy");
 
-  /* Alert the copied text */
-  var tooltip = document.getElementById("myTooltip");
-  tooltip.innerHTML = "Copied: " + newtext.value;
-//   alert("Copied the text: " + newtext.value);
+    /* Alert the copied text */
+    var tooltip = document.getElementById("myTooltip");
+    tooltip.innerHTML = "Copied: " + newtext.value;
+    //alert("Copied the text: " + newtext.value);
 }
 
 function outFunc() {

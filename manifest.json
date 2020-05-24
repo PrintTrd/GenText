@@ -1,0 +1,14 @@
+{
+    "name": "GenText",
+    "short_name": "GenText",
+    "icons": [{
+        "src": "img/icons8-text-64.png",
+        "sizes": "72x72",
+        "type": "image/jpg"
+    }],
+    "start_url": "https://gentext.netlify.app/",
+    "display": "standalone",
+    "orientation": "portrait",
+    "background_color": "#ffffff",
+    "theme_color": "#ffffff"
+}
