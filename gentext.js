@@ -61,11 +61,27 @@ function uppercase() {
     newtext.value = text.value;
     newtext.style.textTransform = "uppercase";
 }
+
 function bold() {
-    newtext.value = text.value;
+    function translate (char)
+    {
+        let diff;
+        if (/[A-Z]/.test (char))
+        {
+            diff = "𝗔".codePointAt (0) - "A".codePointAt (0);
+        }
+        else
+        {
+            diff = "𝗮".codePointAt (0) - "a".codePointAt (0);
+        }
+        return String.fromCodePoint (char.codePointAt (0) + diff);
+    }    
+    // newtext.value = text.value;
     //Change the font weight style to 700
-    newtext.style.fontWeight = 'bold';
+    // newtext.style.fontWeight = 'bold';
+    newtext.value = text.value.replace (/[A-Za-z]/g, translate);
 }
+
 function impact() {
     newtext.value = text.value;
     newtext.style.fontFamily = "Impact,Charcoal,sans-serif";
